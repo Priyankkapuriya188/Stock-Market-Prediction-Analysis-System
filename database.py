@@ -55,7 +55,6 @@ def fatch_and_store():
             row['trend'], row['target_return'], row['volume_spike']
         ))
         
-    # --- UPDATE 2: Query ma 'symbol' ane teno '%s' add karyo ---
     query = """
         INSERT INTO stock_price_predict (
             datetime, symbol, open, high, low, close, volume,
